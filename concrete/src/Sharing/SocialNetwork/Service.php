@@ -41,7 +41,7 @@ class Service
         if ($this->customHTML) {
             return $this->customHTML;
         } else {
-            return '<i class="fa fa-' . $this->getIcon() . '"></i>';
+            return '<span class="fa fa-' . $this->getIcon() . '"></span>';
         }
     }
 
