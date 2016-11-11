@@ -4,8 +4,9 @@
     <ul class="list-inline">
     <?php foreach($links as $link) {
         $service = $link->getServiceObject();
+        $serviceTitle = $link->getServiceHandle();
         ?>
-        <li><a target="_blank" href="<?php echo h($link->getURL()); ?>"><?php echo $service->getServiceIconHTML(); ?></a></li>
+        <li><a target="_blank" href="<?php echo h($link->getURL()); ?>" title="<?php echo $serviceTitle ?>"><?php echo $service->getServiceIconHTML(); ?></a></li>
     <?php } ?>
     </ul>
 </div>
